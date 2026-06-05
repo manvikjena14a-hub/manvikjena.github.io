@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemistry Learning Hub</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+}
+
+header{
+background:#1e293b;
+padding:20px;
+text-align:center;
+}
+
+h1{
+color:#38bdf8;
+}
+
+.search{
+text-align:center;
+margin:20px;
+}
+
+input{
+width:80%;
+padding:12px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.card{
+background:#1e293b;
+padding:15px;
+border-radius:12px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.symbol{
+font-size:35px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.type{
+margin-top:10px;
+font-size:14px;
+color:#94a3b8;
+}
+
+footer{
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🧪 Chemistry Learning Hub</h1>
+<p>Periodic Table & Element Explorer</p>
+</header>
+
+<div class="search">
+<input type="text" id="search" placeholder="Search Element..." onkeyup="searchElement()">
+</div>
+
+<div class="container" id="elements">
+
+<div class="card">
+<div class="symbol">H</div>
+<h3>Hydrogen</h3>
+<p>Atomic No: 1</p>
+<div class="type">Non-Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">He</div>
+<h3>Helium</h3>
+<p>Atomic No: 2</p>
+<div class="type">Noble Gas</div>
+</div>
+
+<div class="card">
+<div class="symbol">Li</div>
+<h3>Lithium</h3>
+<p>Atomic No: 3</p>
+<div class="type">Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">C</div>
+<h3>Carbon</h3>
+<p>Atomic No: 6</p>
+<div class="type">Non-Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">N</div>
+<h3>Nitrogen</h3>
+<p>Atomic No: 7</p>
+<div class="type">Non-Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">O</div>
+<h3>Oxygen</h3>
+<p>Atomic No: 8</p>
+<div class="type">Non-Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">Na</div>
+<h3>Sodium</h3>
+<p>Atomic No: 11</p>
+<div class="type">Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">Mg</div>
+<h3>Magnesium</h3>
+<p>Atomic No: 12</p>
+<div class="type">Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">Al</div>
+<h3>Aluminium</h3>
+<p>Atomic No: 13</p>
+<div class="type">Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">Fe</div>
+<h3>Iron</h3>
+<p>Atomic No: 26</p>
+<div class="type">Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">Cu</div>
+<h3>Copper</h3>
+<p>Atomic No: 29</p>
+<div class="type">Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">Ag</div>
+<h3>Silver</h3>
+<p>Atomic No: 47</p>
+<div class="type">Metal</div>
+</div>
+
+<div class="card">
+<div class="symbol">Au</div>
+<h3>Gold</h3>
+<p>Atomic No: 79</p>
+<div class="type">Metal</div>
+</div>
+
+</div>
+
+<footer>
+Made for Chemistry Students 🧪
+</footer>
+
+<script>
+function searchElement() {
+let input = document.getElementById('search').value.toLowerCase();
+let cards = document.getElementsByClassName('card');
+
+for(let i=0;i<cards.length;i++){
+let text = cards[i].innerText.toLowerCase();
+
+if(text.includes(input)){
+cards[i].style.display="block";
+}else{
+cards[i].style.display="none";
+}
+}
+}
+</script>
+
+</body>
+</html>
