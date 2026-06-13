@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,46 +8,52 @@
 
 <style>
 body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f4f4f4;
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f0f2f5;
 }
 
 header{
-background:#2563eb;
-color:white;
-text-align:center;
-padding:25px;
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-.section{
-background:white;
-margin:20px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.2);
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    margin:20px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 h2{
-color:#2563eb;
-}
-
-a{
-display:block;
-padding:10px;
-margin:5px 0;
-background:#2563eb;
-color:white;
-text-decoration:none;
-border-radius:5px;
-text-align:center;
+    color:#2563eb;
 }
 
 .search{
-width:90%;
-padding:12px;
-margin:15px;
-font-size:16px;
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+a{
+    display:block;
+    margin:8px 0;
+    padding:10px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
 }
 </style>
 </head>
@@ -54,61 +61,40 @@ font-size:16px;
 <body>
 
 <header>
-<h1>Question Paper Hub</h1>
-<p>CBSE | CHSE | All State Boards</p>
+    <h1>Question Paper Hub</h1>
+    <p>CBSE • CHSE • All State Boards</p>
 </header>
 
-<center>
-<input type="text" class="search" placeholder="Search Subject...">
-</center>
+<div class="container">
 
-<div class="section">
+<input type="text" class="search" placeholder="Search Subject...">
+
+<div class="card">
 <h2>Class 10</h2>
 
-<h3>Maths</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
+<a href="https://www.google.com">Maths 2025</a>
+<a href="https://www.google.com">Science 2025</a>
+<a href="https://www.google.com">English 2025</a>
+<a href="https://www.google.com">Social Science 2025</a>
 
-<h3>Science</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
-
-<h3>English</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
-
-<h3>Social Science</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
 </div>
 
-<div class="section">
+<div class="card">
 <h2>Class 12</h2>
 
-<h3>Physics</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
+<a href="https://www.google.com">Physics 2025</a>
+<a href="https://www.google.com">Chemistry 2025</a>
+<a href="https://www.google.com">Mathematics 2025</a>
+<a href="https://www.google.com">Biology 2025</a>
+<a href="https://www.google.com">English 2025</a>
 
-<h3>Chemistry</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
-
-<h3>Mathematics</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
-
-<h3>Biology</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
-
-<h3>English</h3>
-<a href="#">2025 Question Paper</a>
-<a href="#">2024 Question Paper</a>
 </div>
 
-<div class="section">
+<div class="card">
 <h2>AI Doubt Solver</h2>
-<p>AI Feature Coming Soon</p>
+<p>Coming Soon</p>
+</div>
+
 </div>
 
 </body>
